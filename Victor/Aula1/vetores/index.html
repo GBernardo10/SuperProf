@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var vetorFruta = ["Banana", "Morango", "Abacate", "Tomate", "Melancia"];
+
+    console.log("Vetor Fruta original: ", vetorFruta);
+
+    vetorFruta.push("Laranja");
+
+    console.log("Vetor Fruta com laranja: ", vetorFruta);
+
+    vetorFruta.pop();
+
+    console.log("Vetor Fruta sem laranja: ", vetorFruta);
+
+    vetorFruta.shift();
+
+    console.log("Vetor Fruta sem Banana: ", vetorFruta);
+
+    vetorFruta.unshift("Uva");
+
+    console.log("Vetor Fruta 1º elemento é Uva: ", vetorFruta);
+
+    vetorFruta.splice(vetorFruta.indexOf("Abacate"), 1);
+
+    console.log("Vetor Fruta sem Abacate", vetorFruta);
+
+    vetorFruta.splice(vetorFruta.indexOf("Abacate"), 2);
+
+    console.log("Vetor Fruta sem tomate", vetorFruta);
+
+    vetorFruta.splice(vetorFruta.indexOf("Abacate"), 3);
+
+    console.log("Vetor Fruta sem melancia", vetorFruta);
+
+    vetorFruta[2] = "Limão";
+
+    console.log("Vetor Fruta com limao", vetorFruta);
+
+    console.log("Vetor Fruta de tras pra frente", vetorFruta.reverse());
+  </script>
+</html>

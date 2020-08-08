@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  function podeVotar(idade) {
+    if (idade >= 16 && idade <= 60) {
+      console.log("Você pode votar");
+    } else {
+      console.log("Você nao pode votar");
+    }
+  }
+
+  function podeSeAlistar(idade, sexo) {
+    if (idade > 18 && sexo === "h") {
+      console.log("Você pode se alistar");
+    } else {
+      console.log("Você nao pode se alistar");
+    }
+  }
+
+  function podeJogarVideoGame(fezLicao, estaTarde) {
+    if (estaTarde == true) {
+      console.log("nao pode jogar agora");
+    } else if (fezLicao == true && estaTarde == false) {
+      console.log("pode jogar agora");
+    } else if (fezLicao == false || estaTarde == true) {
+      console.log("ainda nao");
+    }
+  }
+
+  function sabeProgramar(resposta) {
+    if (!resposta == true) {
+      console.log("Vamos aprender");
+    } else {
+      console.log("Legal!!!");
+    }
+  }
+</script>
